@@ -8,7 +8,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 ".vimrc jsformat
-
 map <c-f> :call JsBeautify()<cr>
 " or
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
@@ -16,6 +15,21 @@ autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+"--------------------------------------
+
+
+".vimrc jsDoc
+let g:JSDocSnippetsMapping='<D-C>'
+"-------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 " set the runtime path to include Vundle and initialize
@@ -30,9 +44,16 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+"jsFormat
 Plugin 'tpope/vim-fugitive'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
+
+"jsDoc
+Plugin 'SirVer/ultisnips'
+Plugin 'jordwalke/JSDocSnippets'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 " Git plugin not hosted on GitHub
