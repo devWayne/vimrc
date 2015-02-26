@@ -41,7 +41,7 @@ let g:solarized_termcolors=256
 
 
 
-
+" First git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
