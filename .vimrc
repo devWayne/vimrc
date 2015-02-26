@@ -76,6 +76,8 @@ Plugin 'jordwalke/JSDocSnippets'
 
 "Solarized Colorscheme
 Plugin 'altercation/vim-colors-solarized'
+" cd ~/.vim/bundle/vim-colors-solarized/colors
+" mv solarized.vim ~/.vim/colors/
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -90,6 +92,6 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Put your non-Plugin stuff it after this line
 
 
