@@ -2,7 +2,8 @@ set number
 set guifont=Courier\ New:h14
 
 set nocompatible              " be iMproved, required
-filetype off                  " required
+
+
 
 "-------------------------------------
 ".vimrc NERD_tree
@@ -24,15 +25,10 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 "--------------------------------------
 ".vimrc jsDoc
 let g:JSDocSnippetsMapping='<D-C>'
-"-------------------------------------
-"Solarized Colorscheme
-"cd vim-colors-solarized/colors
-"mv solarized.vim ~/.vim/colors/
-syntax enable
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-"-------------------------------------
+"--------------------------------------
+".vimrc less
+filetype on
+au BufNewFile,BufRead *.less set filetype=less
 
 
 
@@ -41,7 +37,6 @@ let g:solarized_termcolors=256
 
 
 
-" First git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -61,12 +56,6 @@ Plugin 'scrooloose/nerdtree'
 "vim-nerdtree-tabs
 Plugin 'jistr/vim-nerdtree-tabs'
 
-
-"jsFormat
-Plugin 'tpope/vim-fugitive'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'einars/js-beautify'
-
 "less
 Plugin 'groenewege/vim-less'
 
@@ -74,24 +63,15 @@ Plugin 'groenewege/vim-less'
 Plugin 'SirVer/ultisnips'
 Plugin 'jordwalke/JSDocSnippets'
 
-"Solarized Colorscheme
-Plugin 'altercation/vim-colors-solarized'
-" cd ~/.vim/bundle/vim-colors-solarized/colors
-" mv solarized.vim ~/.vim/colors/
+"jsbeautify
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff it after this line
 
+" monokai
+syntax enable
+colorscheme monokai
 
