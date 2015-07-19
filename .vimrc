@@ -20,8 +20,8 @@ map <c-f> :call JsBeautify()<cr>
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 " for html
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+" for less
+autocmd FileType less noremap <buffer> <c-f> :call CSSBeautify()<cr>
 "--------------------------------------
 ".vimrc jsDoc
 let g:JSDocSnippetsMapping='<D-C>'
@@ -29,13 +29,6 @@ let g:JSDocSnippetsMapping='<D-C>'
 ".vimrc less
 filetype on
 au BufNewFile,BufRead *.less set filetype=less
-
-
-
-
-
-
-
 
 
 " set the runtime path to include Vundle and initialize
